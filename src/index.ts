@@ -140,8 +140,9 @@ function textResponse(body: string, status = 200): Response {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    const pathname = url.pathname.replace(/\/+$/, "");
 
-    if (url.pathname !== "/latestclick") {
+    if (pathname !== "/latestclick") {
       return new Response("Not Found", { status: 404 });
     }
 

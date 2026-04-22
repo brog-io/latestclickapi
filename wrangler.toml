@@ -3,6 +3,9 @@ main = "src/index.ts"
 compatibility_date = "2026-04-22"
 workers_dev = true
 
-routes = [
-  { pattern = "brog.io/latestclick", zone_name = "brog.io" }
-]
+[[routes]]
+pattern = "https://brog.io/latestclick*"
+zone_name = "brog.io"
+
+[vars]
+DISCORD_CHANNEL_ID = "1025978742318833684"
