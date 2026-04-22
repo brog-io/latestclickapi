@@ -1,4 +1,4 @@
-name = "discord-latestclick"
+name = "discord-latest-image-api"
 main = "src/index.ts"
 compatibility_date = "2026-04-22"
 workers_dev = true
